@@ -2,9 +2,23 @@ import { useParams, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, MapPin, Star, Clock, Camera } from "lucide-react";
+
+// Import specific images for each heritage site
 import monasteryImage from "@/assets/monastery.jpg";
+import tashilhunpoMonastery from "@/assets/tashilhunpo-monastery.jpg";
+import mindrollingMonastery from "@/assets/mindrolling-monastery.jpg"; 
+import namdrolingMonastery from "@/assets/namdroling-monastery.jpg";
+
 import fortImage from "@/assets/fort.jpg";
+import amberFort from "@/assets/amber-fort.jpg";
+import mehrangarhFort from "@/assets/mehrangarh-fort.jpg";
+import golcondaFort from "@/assets/golconda-fort.jpg";
+
 import templeImage from "@/assets/temple.jpg";
+import brihadeeswarar from "@/assets/brihadeeswarar-temple.jpg";
+import konarkSun from "@/assets/konark-sun-temple.jpg";
+import khajuraho from "@/assets/khajuraho-temples.jpg";
+import somnath from "@/assets/somnath-temple.jpg";
 
 const CategoryDetails = () => {
   const { type } = useParams();
@@ -31,7 +45,7 @@ const CategoryDetails = () => {
           location: "Sikkim",
           rating: 4.6,
           visitTime: "1-2 hours",
-          image: monasteryImage,
+          image: tashilhunpoMonastery,
           featured: false
         },
         {
@@ -40,7 +54,7 @@ const CategoryDetails = () => {
           location: "Dehradun, Uttarakhand",
           rating: 4.7,
           visitTime: "2 hours",
-          image: monasteryImage,
+          image: mindrollingMonastery,
           featured: true
         },
         {
@@ -49,7 +63,7 @@ const CategoryDetails = () => {
           location: "Karnataka",
           rating: 4.9,
           visitTime: "3 hours",
-          image: monasteryImage,
+          image: namdrolingMonastery,
           featured: false
         }
       ]
@@ -74,7 +88,7 @@ const CategoryDetails = () => {
           location: "Jaipur, Rajasthan",
           rating: 4.8,
           visitTime: "4-5 hours",
-          image: fortImage,
+          image: amberFort,
           featured: true
         },
         {
@@ -83,7 +97,7 @@ const CategoryDetails = () => {
           location: "Jodhpur, Rajasthan",
           rating: 4.9,
           visitTime: "3-4 hours",
-          image: fortImage,
+          image: mehrangarhFort,
           featured: false
         },
         {
@@ -92,7 +106,7 @@ const CategoryDetails = () => {
           location: "Hyderabad, Telangana",
           rating: 4.7,
           visitTime: "2-3 hours",
-          image: fortImage,
+          image: golcondaFort,
           featured: true
         }
       ]
@@ -108,7 +122,7 @@ const CategoryDetails = () => {
           location: "Thanjavur, Tamil Nadu",
           rating: 4.9,
           visitTime: "2-3 hours",
-          image: templeImage,
+          image: brihadeeswarar,
           featured: true
         },
         {
@@ -117,7 +131,7 @@ const CategoryDetails = () => {
           location: "Konark, Odisha",
           rating: 4.8,
           visitTime: "2 hours",
-          image: templeImage,
+          image: konarkSun,
           featured: true
         },
         {
@@ -126,7 +140,7 @@ const CategoryDetails = () => {
           location: "Madhya Pradesh",
           rating: 4.7,
           visitTime: "4-5 hours",
-          image: templeImage,
+          image: khajuraho,
           featured: false
         },
         {
@@ -135,7 +149,7 @@ const CategoryDetails = () => {
           location: "Gujarat",
           rating: 4.8,
           visitTime: "1-2 hours",
-          image: templeImage,
+          image: somnath,
           featured: true
         }
       ]
