@@ -281,6 +281,7 @@ const CategoryDetails = () => {
                     
                     <Button
                       size="sm"
+                      onClick={() => navigate(`/site/${type}/${site.id}`)}
                       className="btn-outline-heritage"
                     >
                       <Camera className="w-4 h-4 mr-2" />

@@ -13,6 +13,7 @@ import Success from "./pages/Success";
 import Categories from "./pages/Categories";
 import CategoryDetails from "./pages/CategoryDetails";
 import Search from "./pages/Search";
+import SiteDetails from "./pages/SiteDetails";
 
 const queryClient = new QueryClient();
 
@@ -31,6 +32,7 @@ const App = () => (
           <Route path="/success" element={<Success />} />
           <Route path="/categories" element={<Categories />} />
           <Route path="/category/:type" element={<CategoryDetails />} />
+          <Route path="/site/:category/:id" element={<SiteDetails />} />
           <Route path="/search" element={<Search />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
