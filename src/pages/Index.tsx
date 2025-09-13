@@ -2,9 +2,12 @@ import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import travoraLogo from "@/assets/travora-logo.png";
 import cityscapeBackground from "@/assets/cityscape-background.jpg";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { LanguageToggle } from "@/components/LanguageToggle";
 
 const Index = () => {
   const navigate = useNavigate();
+  const { t } = useLanguage();
 
   useEffect(() => {
     // Auto-navigate to welcome page after 3 seconds
@@ -17,6 +20,11 @@ const Index = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center relative overflow-hidden">
+      {/* Language Toggle */}
+      <div className="absolute top-6 right-6 z-20">
+        <LanguageToggle />
+      </div>
+      
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -34,10 +42,10 @@ const Index = () => {
             className="w-48 h-48 mx-auto mb-8 drop-shadow-2xl animate-scale-in"
           />
           <h1 className="text-heritage-title text-white mb-4">
-            Travora
+            {t('landing.title')}
           </h1>
           <p className="text-heritage-subtitle text-white/90 mb-8">
-            Discover India's Rich Heritage
+            {t('landing.subtitle')}
           </p>
           <div className="flex justify-center">
             <div className="animate-pulse">
