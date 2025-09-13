@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Search, Menu, MapPin, Heart, Camera, List, Settings, Globe } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { LanguageToggle } from "@/components/LanguageToggle";
 import {
   Sheet,
   SheetContent,
@@ -18,27 +20,28 @@ import templeImage from "@/assets/temple.jpg";
 const Categories = () => {
   const navigate = useNavigate();
   const [searchQuery, setSearchQuery] = useState("");
+  const { t } = useLanguage();
 
   const categories = [
     {
       id: "monasteries",
-      title: "Monasteries",
+      title: t('categories.monasteries'),
       image: monasteryImage,
-      description: "Ancient Buddhist and Jain monasteries",
+      description: t('categories.monasteries.desc'),
       count: "120+ Sites"
     },
     {
       id: "forts",
-      title: "Forts", 
+      title: t('categories.forts'), 
       image: fortImage,
-      description: "Majestic forts and palaces",
+      description: t('categories.forts.desc'),
       count: "250+ Sites"
     },
     {
       id: "temples",
-      title: "Temples",
+      title: t('categories.temples'),
       image: templeImage,
-      description: "Sacred temples and religious sites",
+      description: t('categories.temples.desc'),
       count: "500+ Sites"
     }
   ];
@@ -65,9 +68,10 @@ const Categories = () => {
       <header className="bg-card shadow-sm border-b">
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <h1 className="text-2xl font-bold text-secondary">Travora</h1>
-            
-            <Sheet>
+            <h1 className="text-2xl font-bold text-secondary">{t('landing.title')}</h1>
+            <div className="flex items-center gap-4">
+              <LanguageToggle />
+              <Sheet>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon" className="hover:bg-secondary/10">
                   <Menu className="w-6 h-6" />
@@ -105,7 +109,7 @@ const Categories = () => {
           <div className="relative">
             <Search className="absolute left-4 top-4 h-5 w-5 text-muted-foreground" />
             <Input
-              placeholder="Search heritage sites, monuments, temples..."
+              placeholder={t('categories.search.placeholder')}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               onKeyPress={(e) => e.key === 'Enter' && handleSearch()}
@@ -115,7 +119,7 @@ const Categories = () => {
               onClick={handleSearch}
               className="absolute right-2 top-2 btn-heritage"
             >
-              Search
+              {t('common.search')}
             </Button>
           </div>
         </div>
