@@ -99,6 +99,7 @@ const Categories = () => {
                 </div>
               </SheetContent>
             </Sheet>
+            </div>
           </div>
         </div>
       </header>
