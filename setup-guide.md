@@ -22,11 +22,13 @@ npx tailwindcss init -p
 
 ## 4. Replace Generated Files
 Replace the following files with your Lovable code:
-- `src/` folder (entire contents)
+- `src/` folder (entire contents including assets folder)
 - `tailwind.config.ts`
 - `index.html`
 - `vite.config.ts`
 - Copy tsconfig files from Lovable
+
+**IMPORTANT:** Make sure to copy the entire `src/assets/` folder with all images!
 
 ## 5. VS Code Settings
 Create `.vscode/settings.json`:
