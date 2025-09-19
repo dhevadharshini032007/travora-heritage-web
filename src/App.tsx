@@ -16,6 +16,12 @@ import Categories from "./pages/Categories";
 import CategoryDetails from "./pages/CategoryDetails";
 import Search from "./pages/Search";
 import SiteDetails from "./pages/SiteDetails";
+import Explore from "./pages/Explore";
+import Learn from "./pages/Learn";
+import Culture from "./pages/Culture";
+import Festivals from "./pages/Festivals";
+import Puzzles from "./pages/Puzzles";
+import Quiz from "./pages/Quiz";
 
 const queryClient = new QueryClient();
 
@@ -37,6 +43,12 @@ const App = () => (
             <Route path="/category/:type" element={<CategoryDetails />} />
             <Route path="/site/:category/:id" element={<SiteDetails />} />
             <Route path="/search" element={<Search />} />
+            <Route path="/explore" element={<Explore />} />
+            <Route path="/learn" element={<Learn />} />
+            <Route path="/culture" element={<Culture />} />
+            <Route path="/festivals" element={<Festivals />} />
+            <Route path="/puzzles" element={<Puzzles />} />
+            <Route path="/quiz" element={<Quiz />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

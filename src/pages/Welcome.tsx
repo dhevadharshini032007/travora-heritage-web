@@ -68,12 +68,20 @@ const Welcome = () => {
               </div>
             </div>
 
-            <Button 
-              onClick={() => navigate('/about')}
-              className="btn-primary-glow text-lg px-12 py-6"
-            >
-              {t('common.next')}
-            </Button>
+            <div className="flex gap-4 justify-center">
+              <Button 
+                onClick={() => navigate('/explore')}
+                className="btn-primary-glow text-lg px-8 py-4"
+              >
+                {t('common.explore')}
+              </Button>
+              <Button 
+                onClick={() => navigate('/learn')}
+                className="btn-primary-glow text-lg px-8 py-4"
+              >
+                Learn
+              </Button>
+            </div>
           </div>
         </div>
       </div>

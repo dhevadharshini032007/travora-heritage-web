@@ -1,22 +1,13 @@
 import { useNavigate } from "react-router-dom";
-import { useEffect } from "react";
 import travoraLogo from "@/assets/travora-logo.png";
 import cityscapeBackground from "@/assets/cityscape-background.jpg";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { LanguageToggle } from "@/components/LanguageToggle";
+import { Button } from "@/components/ui/button";
 
 const Index = () => {
   const navigate = useNavigate();
   const { t } = useLanguage();
-
-  useEffect(() => {
-    // Auto-navigate to welcome page after 3 seconds
-    const timer = setTimeout(() => {
-      navigate('/welcome');
-    }, 3000);
-
-    return () => clearTimeout(timer);
-  }, [navigate]);
 
   return (
     <div className="min-h-screen flex items-center justify-center relative overflow-hidden">
@@ -47,13 +38,12 @@ const Index = () => {
           <p className="text-heritage-subtitle text-white/90 mb-8">
             {t('landing.subtitle')}
           </p>
-          <div className="flex justify-center">
-            <div className="animate-pulse">
-              <div className="w-2 h-2 bg-primary rounded-full mx-1 inline-block"></div>
-              <div className="w-2 h-2 bg-primary rounded-full mx-1 inline-block animation-delay-200"></div>
-              <div className="w-2 h-2 bg-primary rounded-full mx-1 inline-block animation-delay-400"></div>
-            </div>
-          </div>
+          <Button 
+            onClick={() => navigate('/welcome')}
+            className="btn-primary-glow text-lg px-8 py-4"
+          >
+            {t('common.next')}
+          </Button>
         </div>
       </div>
     </div>
