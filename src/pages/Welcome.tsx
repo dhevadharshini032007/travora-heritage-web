@@ -43,44 +43,49 @@ const Welcome = () => {
 
           <div className="animate-fade-in space-y-6">
             <div className="grid md:grid-cols-3 gap-6 mb-12">
-              <div className="card-heritage text-center">
+              <div className="card-heritage text-center cursor-pointer hover:scale-105 transition-transform" onClick={() => navigate('/explore')}>
                 <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl">🏛️</span>
                 </div>
                 <h3 className="font-bold text-xl mb-2">{t('common.explore')}</h3>
-                <p className="text-muted-foreground">Discover thousands of heritage sites across India</p>
+                <p className="text-muted-foreground mb-4">{t('explore.description')}</p>
+                <div className="space-y-2 text-sm">
+                  <div className="flex items-center justify-center gap-2">
+                    <span>🏛️</span>
+                    <span>{t('explore.culture')}</span>
+                  </div>
+                  <div className="flex items-center justify-center gap-2">
+                    <span>🎉</span>
+                    <span>{t('explore.festivals')}</span>
+                  </div>
+                </div>
               </div>
               
-              <div className="card-heritage text-center">
+              <div className="card-heritage text-center cursor-pointer hover:scale-105 transition-transform" onClick={() => navigate('/learn')}>
                 <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl">📚</span>
                 </div>
-                <h3 className="font-bold text-xl mb-2">Learn</h3>
-                <p className="text-muted-foreground">Rich historical information and cultural insights</p>
+                <h3 className="font-bold text-xl mb-2">{t('learn.title')}</h3>
+                <p className="text-muted-foreground mb-4">{t('learn.description')}</p>
+                <div className="space-y-2 text-sm">
+                  <div className="flex items-center justify-center gap-2">
+                    <span>🧩</span>
+                    <span>{t('learn.puzzles')}</span>
+                  </div>
+                  <div className="flex items-center justify-center gap-2">
+                    <span>🧠</span>
+                    <span>{t('learn.quiz')}</span>
+                  </div>
+                </div>
               </div>
               
-              <div className="card-heritage text-center">
+              <div className="card-heritage text-center cursor-pointer hover:scale-105 transition-transform" onClick={() => navigate('/explore')}>
                 <div className="w-16 h-16 bg-heritage-gold rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl">🎯</span>
                 </div>
-                <h3 className="font-bold text-xl mb-2">Experience</h3>
-                <p className="text-muted-foreground">Interactive AR features and virtual tours</p>
+                <h3 className="font-bold text-xl mb-2">{t('experience.title')}</h3>
+                <p className="text-muted-foreground">{t('experience.description')}</p>
               </div>
-            </div>
-
-            <div className="flex gap-4 justify-center">
-              <Button 
-                onClick={() => navigate('/explore')}
-                className="btn-primary-glow text-lg px-8 py-4"
-              >
-                {t('common.explore')}
-              </Button>
-              <Button 
-                onClick={() => navigate('/learn')}
-                className="btn-primary-glow text-lg px-8 py-4"
-              >
-                Learn
-              </Button>
             </div>
           </div>
         </div>

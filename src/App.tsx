@@ -22,6 +22,7 @@ import Culture from "./pages/Culture";
 import Festivals from "./pages/Festivals";
 import Puzzles from "./pages/Puzzles";
 import Quiz from "./pages/Quiz";
+import QuizDifficulty from "./pages/QuizDifficulty";
 
 const queryClient = new QueryClient();
 
@@ -48,6 +49,7 @@ const App = () => (
             <Route path="/culture" element={<Culture />} />
             <Route path="/festivals" element={<Festivals />} />
             <Route path="/puzzles" element={<Puzzles />} />
+            <Route path="/quiz-difficulty" element={<QuizDifficulty />} />
             <Route path="/quiz" element={<Quiz />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />

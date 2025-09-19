@@ -20,7 +20,7 @@ const Learn = () => {
       title: "Heritage Quiz", 
       description: "Test your knowledge with heritage-themed quizzes",
       icon: "🧠",
-      path: "/quiz"
+      path: "/quiz-difficulty"
     }
   ];
 

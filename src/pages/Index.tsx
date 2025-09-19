@@ -25,7 +25,10 @@ const Index = () => {
       </div>
       
       {/* Content */}
-      <div className="relative z-10 text-center px-6">
+      <div 
+        className="relative z-10 text-center px-6 cursor-pointer h-full flex items-center justify-center"
+        onClick={() => navigate('/welcome')}
+      >
         <div className="animate-fade-in">
           <img 
             src={travoraLogo} 
@@ -38,12 +41,9 @@ const Index = () => {
           <p className="text-heritage-subtitle text-white/90 mb-8">
             {t('landing.subtitle')}
           </p>
-          <Button 
-            onClick={() => navigate('/welcome')}
-            className="btn-primary-glow text-lg px-8 py-4"
-          >
-            {t('common.next')}
-          </Button>
+          <p className="text-white/70 text-lg animate-pulse">
+            {t('landing.clickAnywhere')}
+          </p>
         </div>
       </div>
     </div>

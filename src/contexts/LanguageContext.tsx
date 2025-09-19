@@ -138,6 +138,52 @@ const translations = {
     'chatbot.title': 'Heritage Assistant',
     'chatbot.placeholder': 'Ask me about Indian heritage sites...',
     'chatbot.greeting': 'Hello! I\'m your heritage guide. Ask me about Indian temples, forts, monasteries, or any heritage site!',
+
+    // Landing page
+    'landing.clickAnywhere': 'Click anywhere to continue',
+
+    // Explore
+    'explore.description': 'Discover thousands of heritage sites across India',
+    'explore.culture': 'Indian Culture & Traditions',
+    'explore.festivals': 'Festivals & Celebrations',
+
+    // Learn
+    'learn.title': 'Learn',
+    'learn.description': 'Rich historical information and cultural insights',
+    'learn.puzzles': 'Heritage Puzzles',
+    'learn.quiz': 'Knowledge Quiz',
+
+    // Experience
+    'experience.title': 'Experience',
+    'experience.description': 'Interactive AR features and virtual tours',
+
+    // Quiz
+    'quiz.title': 'Heritage Quiz',
+    'quiz.easy': 'Easy',
+    'quiz.medium': 'Medium', 
+    'quiz.hard': 'Hard',
+    'quiz.selectDifficulty': 'Select Difficulty Level',
+    'quiz.question': 'Question',
+    'quiz.score': 'Score',
+    'quiz.submitAnswer': 'Submit Answer',
+    'quiz.tryAgain': 'Try Again',
+    'quiz.backToLearn': 'Back to Learn',
+    'quiz.completed': 'Quiz Completed!',
+    'quiz.correct': 'Correct!',
+    'quiz.incorrect': 'Incorrect!',
+
+    // Puzzles
+    'puzzles.title': 'Heritage Site Puzzles',
+    'puzzles.unscramble': 'Unscramble the letters to reveal famous heritage sites',
+    'puzzles.hint': 'Hint',
+    'puzzles.yourAnswer': 'Your Answer',
+    'puzzles.availableLetters': 'Available Letters',
+    'puzzles.checkAnswer': 'Check Answer',
+    'puzzles.shuffleLetters': 'Shuffle Letters',
+    'puzzles.reset': 'Reset',
+    'puzzles.completed': 'Completed Puzzles',
+    'puzzles.leaderboard': 'Leaderboard',
+    'puzzles.difficulty': 'Difficulty',
   },
   ta: {
     // Navigation
@@ -266,6 +312,52 @@ const translations = {
     'chatbot.title': 'பாரம்பரிய உதவியாளர்',
     'chatbot.placeholder': 'இந்திய பாரம்பரிய தளங்களைப் பற்றி என்னிடம் கேளுங்கள்...',
     'chatbot.greeting': 'வணக்கம்! நான் உங்கள் பாரம்பரிய வழிகாட்டி. இந்திய கோயில்கள், கோட்டைகள், மடாலயங்கள் அல்லது எந்த பாரம்பரிய தளத்தைப் பற்றியும் என்னிடம் கேளுங்கள்!',
+
+    // Landing page
+    'landing.clickAnywhere': 'தொடர எங்கும் கிளிக் செய்யவும்',
+
+    // Explore
+    'explore.description': 'இந்தியா முழுவதும் ஆயிரக்கணக்கான பாரம்பரிய தளங்களைக் கண்டறியுங்கள்',
+    'explore.culture': 'இந்திய கலாச்சாரம் & பாரம்பரியங்கள்',
+    'explore.festivals': 'திருவிழாக்கள் & கொண்டாட்டங்கள்',
+
+    // Learn
+    'learn.title': 'கற்றுக்கொள்ளுங்கள்',
+    'learn.description': 'வளமான வரலாற்று தகவல் மற்றும் கலாச்சார நுண்ணறிவுகள்',
+    'learn.puzzles': 'பாரம்பரிய புதிர்கள்',
+    'learn.quiz': 'அறிவு வினாடி வினா',
+
+    // Experience
+    'experience.title': 'அனுபவம்',
+    'experience.description': 'ஊடாடும் AR அம்சங்கள் மற்றும் மெய்நிகர் சுற்றுப்பயணங்கள்',
+
+    // Quiz
+    'quiz.title': 'பாரம்பரிய வினாடி வினா',
+    'quiz.easy': 'எளிய',
+    'quiz.medium': 'நடுத்தர',
+    'quiz.hard': 'கடின',
+    'quiz.selectDifficulty': 'சிரம நிலையைத் தேர்ந்தெடுக்கவும்',
+    'quiz.question': 'கேள்வி',
+    'quiz.score': 'மதிப்பெண்',
+    'quiz.submitAnswer': 'பதில் சமர்பிக்கவும்',
+    'quiz.tryAgain': 'மீண்டும் முயற்சிக்கவும்',
+    'quiz.backToLearn': 'கற்றுக்கொள்ளுதலுக்குத் திரும்பு',
+    'quiz.completed': 'வினாடி வினா முடிந்தது!',
+    'quiz.correct': 'சரி!',
+    'quiz.incorrect': 'தவறு!',
+
+    // Puzzles
+    'puzzles.title': 'பாரம்பரிய தள புதிர்கள்',
+    'puzzles.unscramble': 'பிரபல பாரம்பரிய தளங்களை வெளிப்படுத்த எழுத்துக்களை சரிசெய்யுங்கள்',
+    'puzzles.hint': 'குறிப்பு',
+    'puzzles.yourAnswer': 'உங்கள் பதில்',
+    'puzzles.availableLetters': 'கிடைக்கக்கூடிய எழுத்துக்கள்',
+    'puzzles.checkAnswer': 'பதிலை சரிபார்க்கவum்',
+    'puzzles.shuffleLetters': 'எழுத்துக்களைக் கலக்கவும்',
+    'puzzles.reset': 'மீட்டமைக்கவum்',
+    'puzzles.completed': 'முடிக்கப்பட்ட புதிர்கள்',
+    'puzzles.leaderboard': 'தலைமைப் பலகை',
+    'puzzles.difficulty': 'சிரமம்',
   }
 };
 
