@@ -23,14 +23,8 @@ const Explore = () => {
       path: "/festivals"
     },
     {
-      title: "Heritage Sites",
-      description: "Virtual tours and AR experiences of monuments",
-      icon: "🏛️",
-      path: "/categories"
-    },
-    {
       title: "Local Guides",
-      description: "Connect with certified heritage guides",
+      description: "Connect with certified heritage guides and experts",
       icon: "👥",
       path: "/guides"
     },

@@ -14,7 +14,7 @@ const Learn = () => {
       title: "Heritage Puzzles",
       description: "Solve interactive puzzles about Indian heritage sites",
       icon: "🧩",
-      path: "/puzzles"
+      path: "/puzzle-difficulty"
     },
     {
       title: "Heritage Quiz", 

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -10,41 +10,115 @@ import { toast } from "sonner";
 const Puzzles = () => {
   const navigate = useNavigate();
   const { t } = useLanguage();
+  const [searchParams] = useSearchParams();
+  const difficulty = searchParams.get('difficulty') || 'easy';
 
-  const puzzles = [
-    {
-      id: 1,
-      site: "Taj Mahal",
-      scrambled: ["A", "J", "T", " ", "M", "A", "H", "A", "L"],
-      correct: "TAJ MAHAL",
-      hint: "White marble mausoleum in Agra",
-      difficulty: "Easy"
-    },
-    {
-      id: 2,
-      site: "Red Fort",
-      scrambled: ["R", "E", "D", " ", "F", "O", "R", "T"],
-      correct: "RED FORT",
-      hint: "Mughal fortress in Delhi",
-      difficulty: "Easy"
-    },
-    {
-      id: 3,
-      site: "Hampi",
-      scrambled: ["H", "A", "M", "P", "I"],
-      correct: "HAMPI",
-      hint: "Ruined city in Karnataka",
-      difficulty: "Medium"
-    },
-    {
-      id: 4,
-      site: "Khajuraho",
-      scrambled: ["K", "H", "A", "J", "U", "R", "A", "H", "O"],
-      correct: "KHAJURAHO",
-      hint: "Temple complex famous for sculptures",
-      difficulty: "Hard"
-    }
-  ];
+  const allPuzzles = {
+    easy: [
+      {
+        id: 1,
+        site: "Taj Mahal",
+        scrambled: ["T", "A", "J", " ", "M", "A", "H", "A", "L"],
+        correct: "TAJ MAHAL",
+        hint: "White marble mausoleum in Agra",
+        difficulty: "Easy"
+      },
+      {
+        id: 2,
+        site: "Red Fort",
+        scrambled: ["R", "E", "D", " ", "F", "O", "R", "T"],
+        correct: "RED FORT",
+        hint: "Mughal fortress in Delhi",
+        difficulty: "Easy"
+      },
+      {
+        id: 3,
+        site: "Gateway of India",
+        scrambled: ["G", "A", "T", "E", "W", "A", "Y", " ", "O", "F", " ", "I", "N", "D", "I", "A"],
+        correct: "GATEWAY OF INDIA",
+        hint: "Famous arch monument in Mumbai",
+        difficulty: "Easy"
+      }
+    ],
+    medium: [
+      {
+        id: 1,
+        site: "Hampi",
+        scrambled: ["H", "A", "M", "P", "I"],
+        correct: "HAMPI",
+        hint: "Ruined city in Karnataka",
+        difficulty: "Medium"
+      },
+      {
+        id: 2,
+        site: "Konark Sun Temple",
+        scrambled: ["K", "O", "N", "A", "R", "K", " ", "S", "U", "N", " ", "T", "E", "M", "P", "L", "E"],
+        correct: "KONARK SUN TEMPLE",
+        hint: "Ancient temple dedicated to Sun God",
+        difficulty: "Medium"
+      },
+      {
+        id: 3,
+        site: "Meenakshi Temple",
+        scrambled: ["M", "E", "E", "N", "A", "K", "S", "H", "I", " ", "T", "E", "M", "P", "L", "E"],
+        correct: "MEENAKSHI TEMPLE",
+        hint: "Famous temple in Madurai",
+        difficulty: "Medium"
+      },
+      {
+        id: 4,
+        site: "Golconda Fort",
+        scrambled: ["G", "O", "L", "C", "O", "N", "D", "A", " ", "F", "O", "R", "T"],
+        correct: "GOLCONDA FORT",
+        hint: "Historic fort in Hyderabad",
+        difficulty: "Medium"
+      }
+    ],
+    hard: [
+      {
+        id: 1,
+        site: "Khajuraho",
+        scrambled: ["K", "H", "A", "J", "U", "R", "A", "H", "O"],
+        correct: "KHAJURAHO",
+        hint: "Temple complex famous for sculptures",
+        difficulty: "Hard"
+      },
+      {
+        id: 2,
+        site: "Brihadeshwara Temple",
+        scrambled: ["B", "R", "I", "H", "A", "D", "E", "S", "H", "W", "A", "R", "A", " ", "T", "E", "M", "P", "L", "E"],
+        correct: "BRIHADESHWARA TEMPLE",
+        hint: "Great temple in Thanjavur",
+        difficulty: "Hard"
+      },
+      {
+        id: 3,
+        site: "Namdroling Monastery",
+        scrambled: ["N", "A", "M", "D", "R", "O", "L", "I", "N", "G", " ", "M", "O", "N", "A", "S", "T", "E", "R", "Y"],
+        correct: "NAMDROLING MONASTERY",
+        hint: "Tibetan Buddhist monastery in Karnataka",
+        difficulty: "Hard"
+      },
+      {
+        id: 4,
+        site: "Chhatrapati Shivaji Terminus",
+        scrambled: ["C", "H", "H", "A", "T", "R", "A", "P", "A", "T", "I", " ", "S", "H", "I", "V", "A", "J", "I", " ", "T", "E", "R", "M", "I", "N", "U", "S"],
+        correct: "CHHATRAPATI SHIVAJI TERMINUS",
+        hint: "Historic railway station in Mumbai",
+        difficulty: "Hard"
+      },
+      {
+        id: 5,
+        site: "Sundarbans National Park",
+        scrambled: ["S", "U", "N", "D", "A", "R", "B", "A", "N", "S", " ", "N", "A", "T", "I", "O", "N", "A", "L", " ", "P", "A", "R", "K"],
+        correct: "SUNDARBANS NATIONAL PARK",
+        hint: "Mangrove forest and tiger reserve",
+        difficulty: "Hard"
+      }
+    ]
+  };
+
+  const puzzles = allPuzzles[difficulty as keyof typeof allPuzzles] || allPuzzles.easy;
 
   const [currentPuzzle, setCurrentPuzzle] = useState(0);
   const [userAnswer, setUserAnswer] = useState<string[]>([]);
@@ -87,8 +161,8 @@ const Puzzles = () => {
   };
 
   const checkAnswer = () => {
-    const answer = userAnswer.join("").trim().toUpperCase();
-    const correct = puzzles[currentPuzzle].correct.toUpperCase();
+    const answer = userAnswer.join("").replace(/\s+/g, ' ').trim().toUpperCase();
+    const correct = puzzles[currentPuzzle].correct.replace(/\s+/g, ' ').trim().toUpperCase();
     
     if (answer === correct) {
       const timeTaken = Date.now() - startTime;
@@ -136,7 +210,7 @@ const Puzzles = () => {
         <Button
           variant="ghost"
           size="icon"
-          onClick={() => navigate('/learn')}
+          onClick={() => navigate('/puzzle-difficulty')}
           className="text-primary hover:bg-primary/10"
         >
           <ArrowLeft className="h-6 w-6" />
