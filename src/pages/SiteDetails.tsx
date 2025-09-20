@@ -133,6 +133,69 @@ const SiteDetails = () => {
         architecture_details: "The fort represents the zenith of Mughal creativity which prevailed during Shah Jahan's reign. The red sandstone walls of the fort are about 2.41 km in circumference and vary in height from 18 meters on the river side to 33 meters on the city side.",
         timings: "9:30 AM - 4:30 PM (Closed on Mondays)",
         entryFee: "₹35 for Indians, ₹500 for foreigners"
+      },
+      "2": {
+        name: "Amber Fort",
+        location: "Jaipur, Rajasthan",
+        rating: 4.8,
+        visitTime: "4-5 hours",
+        image: amberFort,
+        featured: true,
+        yearBuilt: "1592 CE",
+        architecture: "Rajput",
+        description: "Amber Fort is a majestic fort located in Amer, a town with an area of 4 square kilometres located 11 kilometres from Jaipur, Rajasthan state, India.",
+        highlights: [
+          "UNESCO World Heritage Site",
+          "Sheesh Mahal (Mirror Palace)",
+          "Elephant rides to the fort",
+          "Stunning views of Maota Lake"
+        ],
+        history: "Built by Raja Man Singh I in 1592, Amber Fort served as the main residence of the Rajput rulers for several centuries.",
+        architecture_details: "The fort is known for its artistic Hindu and Rajput style elements, with large ramparts and series of gates and cobbled paths.",
+        timings: "8:00 AM - 6:00 PM",
+        entryFee: "₹25 for Indians, ₹550 for foreigners"
+      },
+      "3": {
+        name: "Mehrangarh Fort",
+        location: "Jodhpur, Rajasthan",
+        rating: 4.9,
+        visitTime: "3-4 hours",
+        image: mehrangarhFort,
+        featured: false,
+        yearBuilt: "1459 CE",
+        architecture: "Rajput",
+        description: "One of the largest forts in India, Mehrangarh Fort stands 400 feet above the city of Jodhpur and is enclosed by imposing thick walls.",
+        highlights: [
+          "One of largest forts in India",
+          "Museum with royal artifacts",
+          "Panoramic city views",
+          "Intricate latticed windows"
+        ],
+        history: "Built by Rao Jodha in 1459, the fort has been expanded by successive rulers and houses several palaces with intricate carvings.",
+        architecture_details: "The fort features massive walls and intricate carvings, with seven gates leading to the main fort area.",
+        timings: "9:00 AM - 5:00 PM",
+        entryFee: "₹30 for Indians, ₹600 for foreigners"
+      },
+      "4": {
+        name: "Golconda Fort",
+        location: "Hyderabad, Telangana",
+        rating: 4.7,
+        visitTime: "2-3 hours",
+        image: golcondaFort,
+        featured: true,
+        yearBuilt: "1143 CE",
+        architecture: "Indo-Islamic",
+        description: "Golconda Fort was a medieval fort that was later fortified by the Qutb Shahi dynasty and became their capital.",
+        highlights: [
+          "Acoustic architecture",
+          "Diamond trading center",
+          "Light and sound show",
+          "Fateh Darwaza (Victory Gate)"
+        ],
+        history: "Originally built by the Kakatiya dynasty in the 11th century, later expanded by the Qutb Shahi rulers.",
+        architecture_details: "The fort is famous for its acoustic architecture and the ingenious water supply system.",
+        timings: "9:00 AM - 5:30 PM",
+        entryFee: "₹15 for Indians, ₹200 for foreigners"
       }
     },
     monasteries: {
@@ -156,6 +219,69 @@ const SiteDetails = () => {
         architecture_details: "The monastery follows traditional Tibetan architecture with white walls, flat roofs, and colorful decorations. The main building is three stories high and houses a large collection of ancient Buddhist artifacts, including gold statues and ancient manuscripts.",
         timings: "8:00 AM - 6:00 PM",
         entryFee: "₹25 for Indians, ₹50 for foreigners"
+      },
+      "2": {
+        name: "Tashilhunpo Monastery",
+        location: "Sikkim",
+        rating: 4.6,
+        visitTime: "1-2 hours",
+        image: tashilhunpoMonastery,
+        featured: false,
+        yearBuilt: "1447 CE",
+        architecture: "Tibetan Buddhist",
+        description: "One of the most significant monasteries in Tibetan Buddhism, serving as the traditional seat of the Panchen Lama.",
+        highlights: [
+          "Traditional seat of Panchen Lama",
+          "Ancient Buddhist sculptures",
+          "Peaceful mountain setting",
+          "Traditional Tibetan architecture"
+        ],
+        history: "Founded in 1447 by the 1st Dalai Lama, this monastery has been a center of Buddhist learning for centuries.",
+        architecture_details: "Features traditional Tibetan monastic architecture with white-washed walls, golden roofs, and intricate woodwork.",
+        timings: "9:00 AM - 5:00 PM",
+        entryFee: "₹20 for Indians, ₹40 for foreigners"
+      },
+      "3": {
+        name: "Mindrolling Monastery",
+        location: "Dehradun, Uttarakhand",
+        rating: 4.7,
+        visitTime: "2 hours",
+        image: mindrollingMonastery,
+        featured: true,
+        yearBuilt: "1965 CE",
+        architecture: "Tibetan Buddhist",
+        description: "One of the largest Buddhist centers in India, featuring a 220-foot tall Buddha statue and traditional monastery complex.",
+        highlights: [
+          "220-foot tall Buddha statue",
+          "Largest Buddhist center in India",
+          "Beautiful gardens and grounds",
+          "Traditional Tibetan art and architecture"
+        ],
+        history: "Established in 1965 as the Indian seat of the Mindrolling lineage, one of the six main schools of Tibetan Buddhism.",
+        architecture_details: "Combines traditional Tibetan monastery design with modern construction techniques, featuring colorful murals and intricate Buddhist artwork.",
+        timings: "6:00 AM - 8:00 PM",
+        entryFee: "Free entry, donations welcome"
+      },
+      "4": {
+        name: "Namdroling Monastery",
+        location: "Karnataka",
+        rating: 4.9,
+        visitTime: "3 hours",
+        image: namdrolingMonastery,
+        featured: false,
+        yearBuilt: "1963 CE",
+        architecture: "Tibetan Buddhist",
+        description: "Also known as the Golden Temple, this is the largest teaching center of Nyingma lineage of Tibetan Buddhism in the world.",
+        highlights: [
+          "Largest Nyingma teaching center",
+          "Golden Buddha statues",
+          "Home to thousands of monks",
+          "Beautiful Tibetan art and murals"
+        ],
+        history: "Established in 1963 by Penor Rinpoche, it has grown to become one of the most important centers of Tibetan Buddhism outside Tibet.",
+        architecture_details: "Features stunning golden temples with traditional Tibetan architectural elements, colorful prayer flags, and elaborate Buddhist artwork.",
+        timings: "5:00 AM - 9:00 PM",
+        entryFee: "Free entry"
       }
     }
   };

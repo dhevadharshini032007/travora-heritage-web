@@ -87,6 +87,16 @@ const Welcome = () => {
                 <p className="text-muted-foreground">{t('experience.description')}</p>
               </div>
             </div>
+
+            {/* Next Button */}
+            <div className="text-center">
+              <Button 
+                onClick={() => navigate('/categories')} 
+                className="btn-primary-glow px-8 py-3 text-lg"
+              >
+                {t('common.next')} →
+              </Button>
+            </div>
           </div>
         </div>
       </div>

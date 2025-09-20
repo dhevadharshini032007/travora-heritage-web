@@ -87,7 +87,7 @@ const Puzzles = () => {
   };
 
   const checkAnswer = () => {
-    const answer = userAnswer.join("").replace(/\s+/g, " ").trim().toUpperCase();
+    const answer = userAnswer.join("").trim().toUpperCase();
     const correct = puzzles[currentPuzzle].correct.toUpperCase();
     
     if (answer === correct) {

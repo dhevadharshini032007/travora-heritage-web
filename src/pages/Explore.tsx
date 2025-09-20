@@ -21,6 +21,30 @@ const Explore = () => {
       description: "Explore festivals celebrated on specific dates",
       icon: "🎊",
       path: "/festivals"
+    },
+    {
+      title: "Heritage Sites",
+      description: "Virtual tours and AR experiences of monuments",
+      icon: "🏛️",
+      path: "/categories"
+    },
+    {
+      title: "Local Guides",
+      description: "Connect with certified heritage guides",
+      icon: "👥",
+      path: "/guides"
+    },
+    {
+      title: "Travel Planner",
+      description: "AI-powered itinerary for heritage tourism",
+      icon: "🗺️",
+      path: "/planner"
+    },
+    {
+      title: "Photo Contests",
+      description: "Share and win with heritage photography",
+      icon: "📸",
+      path: "/contests"
     }
   ];
 
@@ -48,7 +72,7 @@ const Explore = () => {
             Choose what you'd like to explore about Indian heritage
           </p>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-2xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {exploreOptions.map((option, index) => (
               <Card 
                 key={index}

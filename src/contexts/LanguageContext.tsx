@@ -184,6 +184,24 @@ const translations = {
     'puzzles.completed': 'Completed Puzzles',
     'puzzles.leaderboard': 'Leaderboard',
     'puzzles.difficulty': 'Difficulty',
+
+    // Culture
+    'culture.title': 'Indian Cultural Heritage',
+    'culture.subtitle': 'Explore the rich cultural diversity of Indian states',
+    'culture.food': 'Food',
+    'culture.traditions': 'Traditions', 
+    'culture.clothing': 'Clothing',
+    
+    // Festivals
+    'festivals.title': 'Indian Festivals Calendar',
+    'festivals.subtitle': 'Discover festivals celebrated throughout the year',
+    'festivals.selectMonth': 'Select Month',
+    'festivals.description': 'Description',
+    'festivals.significance': 'Significance', 
+    'festivals.traditions': 'Traditional Elements',
+    'festivals.learnMore': 'Learn More',
+    'festivals.noFestivals': 'No Major Festivals',
+    'festivals.noFestivalsDesc': 'No major festivals found for',
   },
   ta: {
     // Navigation
