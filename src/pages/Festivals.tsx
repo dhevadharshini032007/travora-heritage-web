@@ -22,7 +22,7 @@ const Festivals = () => {
       state: "Tamil Nadu",
       traditions: ["Rangoli", "Sweet Pongal", "Jallikattu", "Kite Flying"],
       significance: "Four-day harvest festival marking the end of winter solstice",
-      image: "/src/assets/brihadeeswarar-temple.jpg"
+      image: "/src/assets/holi-festival.jpg"
     },
     {
       name: "Makar Sankranti",
@@ -181,7 +181,7 @@ const Festivals = () => {
       state: "Multiple States",
       traditions: ["Oil Lamps", "Fireworks", "Sweets", "Rangoli", "Lakshmi Puja"],
       significance: "Celebrates return of Lord Rama to Ayodhya after defeating Ravana",
-      image: "/src/assets/heritage-sites.jpg"
+      image: "/src/assets/diwali-festival.jpg"
     },
     {
       name: "Bhai Dooj",
@@ -289,11 +289,13 @@ const Festivals = () => {
                 {selectedDate && getFestivalsForMonth(selectedDate.getMonth()).map((festival, index) => (
                   <Card key={index} className="card-heritage overflow-hidden">
                     <div className="relative h-48">
-                      <img 
-                        src={festival.image} 
-                        alt={festival.name}
-                        className="w-full h-full object-cover"
-                      />
+        {festival.image && (
+          <img 
+            src={festival.image} 
+            alt={festival.name}
+            className="w-full h-full object-cover"
+          />
+        )}
                       <div className="absolute inset-0 bg-gradient-heritage opacity-50"></div>
                       <div className="absolute top-4 left-4">
                         <Badge className={getStateColor(festival.state)}>
@@ -346,7 +348,11 @@ const Festivals = () => {
                             <MapPin className="w-4 h-4 mr-2" />
                             <span>{festival.region}</span>
                           </div>
-                          <Button variant="outline" size="sm">
+                          <Button 
+                            variant="outline" 
+                            size="sm"
+                            onClick={() => navigate(`/festivals/${festival.name.toLowerCase().replace(/\s+/g, '-')}`)}
+                          >
                             {t('festivals.learnMore')}
                           </Button>
                         </div>

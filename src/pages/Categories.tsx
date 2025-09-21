@@ -172,7 +172,7 @@ const Categories = () => {
           <div className="card-heritage">
             <div className="grid md:grid-cols-3 gap-8 text-center">
               <div>
-                <div className="text-4xl font-bold text-primary mb-2">870+</div>
+                <div className="text-4xl font-bold text-primary mb-2">3,842</div>
                 <div className="text-lg text-muted-foreground">Heritage Sites</div>
               </div>
               <div>
@@ -180,7 +180,7 @@ const Categories = () => {
                 <div className="text-lg text-muted-foreground">States Covered</div>
               </div>
               <div>
-                <div className="text-4xl font-bold text-heritage-gold mb-2">50k+</div>
+                <div className="text-4xl font-bold text-heritage-gold mb-2">2.5M+</div>
                 <div className="text-lg text-muted-foreground">Happy Travelers</div>
               </div>
             </div>

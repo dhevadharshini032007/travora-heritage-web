@@ -156,6 +156,11 @@ const translations = {
     // Experience
     'experience.title': 'Experience',
     'experience.description': 'Interactive AR features and virtual tours',
+    'experience.ar.title': 'AR Experiences',
+    'experience.ar.subtitle': 'Immersive 3D models of heritage sites',
+    'experience.ar.temples': 'AR Temples',
+    'experience.ar.forts': 'AR Forts',
+    'experience.ar.monasteries': 'AR Monasteries',
 
     // Quiz
     'quiz.title': 'Heritage Quiz',

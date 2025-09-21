@@ -79,12 +79,26 @@ const Welcome = () => {
                 </div>
               </div>
               
-              <div className="card-heritage text-center cursor-pointer hover:scale-105 transition-transform" onClick={() => navigate('/explore')}>
+              <div className="card-heritage text-center cursor-pointer hover:scale-105 transition-transform" onClick={() => navigate('/ar-experience')}>
                 <div className="w-16 h-16 bg-heritage-gold rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">🎯</span>
+                  <span className="text-2xl">🥽</span>
                 </div>
-                <h3 className="font-bold text-xl mb-2">{t('experience.title')}</h3>
-                <p className="text-muted-foreground">{t('experience.description')}</p>
+                <h3 className="font-bold text-xl mb-2">{t('experience.ar.title')}</h3>
+                <p className="text-muted-foreground mb-4">{t('experience.ar.subtitle')}</p>
+                <div className="space-y-2 text-sm">
+                  <div className="flex items-center justify-center gap-2">
+                    <span>🏛️</span>
+                    <span>{t('experience.ar.temples')}</span>
+                  </div>
+                  <div className="flex items-center justify-center gap-2">
+                    <span>🏰</span>
+                    <span>{t('experience.ar.forts')}</span>
+                  </div>
+                  <div className="flex items-center justify-center gap-2">
+                    <span>🏯</span>
+                    <span>{t('experience.ar.monasteries')}</span>
+                  </div>
+                </div>
               </div>
             </div>
 

@@ -24,6 +24,8 @@ import Puzzles from "./pages/Puzzles";
 import Quiz from "./pages/Quiz";
 import QuizDifficulty from "./pages/QuizDifficulty";
 import PuzzleDifficulty from "./pages/PuzzleDifficulty";
+import ARExperience from "@/pages/ARExperience";
+import FestivalDetails from "@/pages/FestivalDetails";
 import Guides from "./pages/Guides";
 import Planner from "./pages/Planner";
 import Contests from "./pages/Contests";
@@ -57,6 +59,8 @@ const App = () => (
             <Route path="/quiz" element={<Quiz />} />
             <Route path="/guides" element={<Guides />} />
             <Route path="/planner" element={<Planner />} />
+            <Route path="/ar-experience" element={<ARExperience />} />
+            <Route path="/festivals/:festivalId" element={<FestivalDetails />} />
             <Route path="/contests" element={<Contests />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />

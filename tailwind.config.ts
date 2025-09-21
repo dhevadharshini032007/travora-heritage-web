@@ -35,6 +35,10 @@ export default {
           "brown-light": "hsl(var(--heritage-brown-light))",
           gold: "hsl(var(--heritage-gold))",
           cream: "hsl(var(--heritage-cream))",
+          orange: "hsl(var(--heritage-orange))",
+          red: "hsl(var(--heritage-red))",
+          green: "hsl(var(--heritage-green))",
+          blue: "hsl(var(--heritage-blue))",
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
